@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+   padding: 10px 40px;
+   font-size: 18px;
+   font-weight: 600; 
+   background-color: #ff3d3d;
+   border: 0;
+   border-radius: 30px;
+   cursor: pointer;
+   transition: .2s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #ff3d3d;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #ff3d3d;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/* estilo do cabeçalho*/
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+ 
+ .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #ff3d3d ;
+    transform: scale(1.05);
+}
+
+/*menu-mobile*/
+.btn-abrir-menu i{
+    color: #ff3d3d;
+    font-size: 45px;
+
+}
+.menu-mobile{
+    background-color: #ff3d3d;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+    
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+    
+}
+.menu-mobile .btn-fechar i{
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.btn-abrir-menu{
+    display: none;
+}
+
+
+.menu-mobile nav ul li a:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #00000075;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+
+/*topo do site*/
+section .topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #ff3d3d;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 15px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    width: 500px;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+/*especialidades*/
+section.especialidades{
+    padding: 150px 4%;
+}
+
+section.especialidades .flex{
+    gap: 300px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+   
+    margin-top: 90px;
+    transition: .2s;
+}
+
+.especialidades .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ff3d3d6c ;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 90px;
+    color: #ff3d3d;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*sobre*/
+section.sobre{
+    padding: 20px 4%;
+    
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #ff3d3d;
+    
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .img-sobre{
+    border-radius: 40px;
+    box-shadow: 0 0 50px 10px #ff030310;
+}
+
+/*HABILIDADES*/
+.section.habilidades{
+    padding: 150px 4%;
+    
+}
+
+.section.habilidades{
+    justify-content: center;
+    margin-top: 20%;
+    
+}
+
+.text{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h2.text span{
+    color: #ff3d3d;
+}
+
+.name{
+    color:#fff;
+}
+
+.habili{
+    
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #000000;
+    box-shadow: 0 15px 20px #ff3d3d49;
+}
+
+section.habilidades .flex{
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.habili ul{
+    list-style: none;
+}
+
+.habili ul li{
+    margin: 20px 0;
+}
+
+.habili .barra{
+    background-color: #ffffff;
+    display: block;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.barra > span{
+    height: 20px;
+    background: linear-gradient(to right, #f49494,#ff3d3d);
+    position: absolute;
+    
+}
+
+.html{
+    width: 80%;
+    animation: html 3s;
+}
+
+.css{
+    width: 80%;
+    animation: css 3s;
+}
+
+.javaScript{
+    width: 50%;
+    animation: javaScript 3s;
+}
+
+.photoshop{
+    width: 100%;
+    animation: photoshop 3s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+    
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+    
+}
+@keyframes javaScript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+    
+}
+@keyframes photoshop {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+
+/*PORTIFOLIO*/
+section.portifolio{
+    margin-top: 10%;
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff71;
+}
+
+section.portifolio .flex{
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #ff3d3d;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 10s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff3d3d63;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.page{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*formulario*/
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #ffffff;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #a50000;
+    font-size: 18px;
+}
+
+form input::placeholder{
+    color: #000000;
+}
+
+form textarea{
+    resize: none;
+height: 250px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #ff3d3d;
+    color: #ffffff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .2s;
+    
+}
+
+
+
+
+
+/*rodapé*/
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff71;
+}
+
+footer .flex{
+    justify-content: center;
+}
+
+footer .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff3d3d;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    color: #fff;
+}
+
+footer .btn-social button:hover{
+    box-shadow: 0px 0px 8px #ff3d3d ;
+    transform: scale(1.05);
+
+}
+
+.agra{
+    color: #fff;
+}
+
+.agra span{
+    color: #ff3d3d;
+}
+
+.gitgit{
+    display: flex;
+    justify-content: space-around;
+}
+
+.gitii{
+    color:#fff;
+}
+.gitiii{
+    color:#fff;
+}
+.gitiiii{
+    color:#fff;
+}
+
+
+@media screen and (max-width:1020px){
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+
+    section.topo-do-site .flex{
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+        
+    }
+
+    
+
+    .topo-do-site h1{
+        
+        font-size: 30px;
+        
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    section.especialidades{
+        padding: 150px 8%;
+    }
+
+    section.especialidades .flex{
+        gap: 30px;
+        text-align: center;
+    }
+
+    section.sobre{
+        padding: 20px 8%;
+        
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        
+    }
+
+    .sobre .img-sobre{
+        width: 100%;
+        border-radius: 40px;
+        box-shadow: 0 0 50px 10px #ff030371;
+    }
+
+    section.portifolio{
+        margin-top: 10%;
+        padding: 80px 8%;
+        
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        height: 460px;
+        background-color: #ff3d3d;
+        background-size: cover;
+        background-position: 100% 0%;
+        transition: 10s;
+        cursor: pointer;
+        border-radius: 40px;}
+
+        section.portifolio .flex{
+            gap: 50px;
+        }
+
+        footer .flex{
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .btn-abrir-menu{
+            display: block;
+        }
+
+        h2.text{
+        
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        .habili{
+            width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        height: 460px;
+            
+            
+        }
+        section.portifolio{
+            margin-top: 10%;
+            padding: 80px 8%;
+            
+        }
+
+        
+
+
+        
+
+       
+        
+       
+}
+
+/*scroollbar*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ff3d3d;
+}
+
+
